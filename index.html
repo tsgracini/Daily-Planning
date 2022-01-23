@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Planning</title>
+
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+</head>
+<body>
+    <header>
+        <div class="headerContent">
+            <div class="headerTitles">
+                <h1>Daily Planning</h1>
+                <p>It's a unique to-do list you need to organize your day.</p>
+            </div>
+            <img src="./images/team.png" alt="People working together">
+        </div>
+    </header>
+
+    <main>
+        <div class="mainContent">
+            <input id="taskInputField" class="taskInput" type="text" placeholder="Add a new task...">
+            <button id="buttonAddTask" class="addTask">Add</button>
+            <button id="buttonCleanInputField" class="cleanField">Clear</button>
+            <h2 id="titleTasksContainer">Tasks</h2>
+            <div id="tasksContainer" class="tasks">
+                <div class="task-item">
+                    Listen my english playlist.
+                    <i onclick="removeTask(this)" class="fas fa-trash-alt trash"></i>
+                </div>
+            </div>
+    </main>
+
+    <footer>
+        <div class="designer">
+            By Thiago Gracini
+        </div>
+    </footer>
+    <script src="./script/script.js"></script>
+    <script src="https://kit.fontawesome.com/b6ecdca5f2.js" crossorigin="anonymous"></script>
+</body>
+</html>

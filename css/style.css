@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Roboto:wght@100;300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    background-color: #F1FAEE;
+    min-height: 100vh;
+}
+
+
+header {
+    background-color: #1D3557;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;  
+}
+
+.headerContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 70%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+}
+
+
+h1 {
+    font-size: 50px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+p {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+img {
+    height: 200px;
+    padding-left: 50px;
+}
+
+main {
+    background-color: #F1FAEE;
+    font-family: 'Roboto', sans-serif;
+    color: #04080D;
+    padding-bottom: 50px;
+}
+
+.mainContent {
+    max-width: 70%;
+    padding-top: 25px;
+    margin: 0 auto;
+}
+
+.taskInput {
+    outline: none;
+    border: 1px solid #A8DADC;
+    height: 50px;
+    width: 100%;
+    padding: 25px;
+    border-radius: 50px;
+    margin-bottom: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+
+}
+
+button {
+    border: none;
+    height: 50px;
+    width: 200px;
+    border-radius: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: #F1FAEE;
+    margin-bottom: 20px;
+    transition: background 0.5s ease; 
+    cursor: pointer;
+}
+
+.addTask {
+    border: 2px solid #1B9623;
+    color: #1B9623bb;
+}
+
+.addTask:hover {
+    background-color: #1B9623;
+    color: white;
+}
+
+.cleanField {
+    border: 2px solid red;
+    color: red;
+}
+
+.cleanField:hover {
+    background-color: red;
+    color: #ffffff;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+
+.tasks {
+    font-size: 20px;
+}
+
+.task-item {
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #A8DADC;
+    margin-bottom: 25px;
+    width: 100%;
+    border-radius: 50px;
+    padding: 15px;
+    padding-left: 25px;
+}
+
+.trash {
+    position: absolute;
+    left: calc(100% - 50px);
+    top: 50%;
+    transform: translateY(-50%);
+    color: #A1A1A1;
+    transition: 0.5s;
+}
+
+.trash:hover {
+    color: #1D3557;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+}
+
+.designer{
+    font-family: 'Roboto', sans-serif;
+    background-color: #1D3557;
+    color: #ffffff;
+    line-height: 50px;
+    text-align: center;
+}
